@@ -1,0 +1,37 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+#shop-page-content * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#shop-page-content a {
+  font-weight: 100 !important;
+}
+
+#shop-page-content h1,
+#shop-page-content h2,
+#shop-page-content h3,
+#shop-page-content h4,
+#shop-page-content h5,
+#shop-page-content h6 {
+  font-weight: 500 !important;
+  text-decoration: none;
+}
+
+.order-form {
+  padding: 0px 0px 0px 0px;
+  margin: 10px 10px 50px 10px;
+}
+
+@media (min-width: 992px) {
+  .order-form {
+    padding: 0px 100px 0px 100px;
+  }
+}
