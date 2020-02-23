@@ -56,7 +56,7 @@
               <a class="nav-link" href="store.html">Stance Parts</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#footer-section">
+              <a class="nav-link" href="#order-section">
                 Service & Ordering
               </a>
             </li>
@@ -181,11 +181,11 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="container" style="margin-bottom: 20px">
+    <section id="order-section">
+      <div class="container" style="margin-bottom: 50px">
         <div class="row">
           <div class="col-md-12" style="margin-top: 50px">
-            <h1 style="text-align: center;">ORDER FORM</h1>
+            <h1 style="text-align: center;">JDM PARTS ORDER FORM</h1>
             <form
               class="order-form"
               action="https://formspree.io/mjvwykqa"
@@ -218,7 +218,7 @@
                 <textarea
                   class="form-control"
                   id="inputOrderDescription"
-                  placeholder="Please describe correct measurments and items."
+                  placeholder="Please describe the part, application, and size (if applicable)"
                   name="description"
                 ></textarea>
               </div>
@@ -289,7 +289,7 @@
               {
                 scrollTop: $(hash).offset().top
               },
-              800,
+              3000,
               function() {
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
