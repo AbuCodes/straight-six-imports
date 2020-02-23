@@ -53,13 +53,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="store.html">Store</a>
+              <a class="nav-link" href="store.html">Stance Parts</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="fitment_manual.pdf">Fitment</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services-section">
+              <a class="nav-link" href="#footer-section">
                 Service & Ordering
               </a>
             </li>
@@ -76,7 +73,9 @@
         <div class="container">
           <h1 class="masthead-heading mb-0">AFTERMARKET AUTOMOTIVE PARTS</h1>
           <h2 class="masthead-subheading mb-0"></h2>
-          <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5"
+          <a
+            href="#footer-section"
+            class="btn btn-primary btn-xl rounded-pill mt-5"
             >Learn More</a
           >
         </div>
@@ -182,7 +181,55 @@
         </div>
       </div>
     </section>
-
+    <section>
+      <div class="container" style="margin-bottom: 20px">
+        <div class="row">
+          <div class="col-md-12" style="margin-top: 50px">
+            <h1 style="text-align: center;">ORDER FORM</h1>
+            <form
+              class="order-form"
+              action="https://formspree.io/mjvwykqa"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="inputName">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  name="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  aria-describedby="emailHelp"
+                  name="_replyto"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="inputOrderDescription">Order Description</label>
+                <textarea
+                  class="form-control"
+                  id="inputOrderDescription"
+                  placeholder="Please describe correct measurments and items."
+                  name="description"
+                ></textarea>
+              </div>
+              <button type="submit" value="Send" class="btn btn-primary">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Footer -->
     <footer class="py-5 bg-black" id="footer-section">
       <div class="container">
@@ -197,8 +244,20 @@
           </div>
           <div class="col-lg-4" style="color: white; text-align: center;">
             <h5>SOCIALS</h5>
-            <i class="fab fa-facebook-square" style="font-size: 30px"></i>
-            <i class="fab fa-instagram" style="font-size: 30px"></i>
+            <a
+              class=""
+              href="https://www.facebook.com/straightsiximports/"
+              style="text-decoration: none; color: white;"
+            >
+              <i class="fab fa-facebook-square" style="font-size: 30px"></i>
+            </a>
+            <a
+              class=""
+              href="https://www.instagram.com/straightsiximports/"
+              style="text-decoration: none; color: white;"
+            >
+              <i class="fab fa-instagram" style="font-size: 30px"></i>
+            </a>
           </div>
         </div>
         <br style="background-color: grey" />
@@ -212,5 +271,33 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $('a').on('click', function(event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== '') {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate(
+              {
+                scrollTop: $(hash).offset().top
+              },
+              800,
+              function() {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
   </body>
 </html>
